@@ -15,7 +15,7 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', '21257327'))
 API_HASH = environ.get('API_HASH', '1235c1fe45ebc4968d9e23bc93440549')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7114571751:AAHfzrCwcsKCWw07O5IRX8pW-T4RC7QO0fo')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7114571751:AAH7dNJkiMugastWWNW4pd5tYuJtSo7quj4')
 
 #Fill These Links
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6318243977 5192808332').split()]
@@ -69,7 +69,7 @@ SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002130344978'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1002106345803') #Requested Content Channel Id
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002236540396')) #Payment Screenshot Sending Channel 
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002118903912')) #Movie Auto Udpate Channel
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002236540396')) #Movie Auto Udpate Channel
 
 
 # Online Stream and Download
