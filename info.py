@@ -15,7 +15,7 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', '21257327'))
 API_HASH = environ.get('API_HASH', '1235c1fe45ebc4968d9e23bc93440549')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7114571751:AAH7dNJkiMugastWWNW4pd5tYuJtSo7quj4')
+BOT_TOKEN = environ.get('BOT_TOKEN', ':AAH7dNJkiMugastWWNW4pd5tYuJtSo7quj4')
 
 #Fill These Links
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6318243977 5192808332').split()]
@@ -25,7 +25,7 @@ MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/Movies_Search_G
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002099257639 -1001943771138').split()]
 
 #Mongo DB Info
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://noyetos600:Cluster0@cluster0.9ibhwdn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
